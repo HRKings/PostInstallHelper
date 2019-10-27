@@ -1,0 +1,127 @@
+[
+    {
+        "Name":"Discord",
+        "Link":"https://discordapp.com/api/download?platform=win",
+        "Pattern":""
+    },
+    {
+        "Name":"ClipStudio",
+        "Link":"http://www.clipstudio.net/en/purchase/product_win",
+        "Pattern":"$link.links | ? href -match '.exe$' | select -First 1 -expand href"
+    },
+    {
+        "Name":"7zip",
+        "Link":"https://www.7-zip.org/download.html",
+        "Pattern":"'https://www.7-zip.org/' + ($link.links | ? href -match '.exe$' | select -First 1 -Skip 1 -expand href)"
+    },
+    {
+        "Name":"AutoHotkey",
+        "Link":"https://autohotkey.com/download/1.1/",
+        "Pattern":"'https://autohotkey.com/download/1.1/' + ($link.links | ? href -match '.exe$' | select -Last 1 -expand href)"
+    },
+    {
+        "Name":"Blender",
+        "Link":"https://www.blender.org/download/",
+        "Pattern":"$link.links | ? href -match '.msi/$' | select -First 1 -expand href"
+    },
+    {
+        "Name":"Bulk-Rename-Utility",
+        "Link":"https://www.bulkrenameutility.co.uk/Download.php",
+        "Pattern":"'https://www.bulkrenameutility.co.uk/'+ ($link.links | ? href -match '.exe$' | select -First 1 -expand href)"
+    },
+    {
+        "Name":"Deluge",
+        "Link":"https://ftp.osuosl.org/pub/deluge/windows/?C=M;O=D",
+        "Pattern":"'https://ftp.osuosl.org/pub/deluge/windows/' + ($link.links | ? href -match '.exe$' | select -First 1 -expand href)"
+    },
+    {
+        "Name":"Everything",
+        "Link":"https://www.voidtools.com/downloads/",
+        "Pattern":"'https://www.voidtools.com' + ($link.links | ? href -match '.exe$' | select -First 1 -Skip 1 -expand href)"
+    },
+    {
+        "Name":"Firefox",
+        "Link":"https://download.mozilla.org/?product=firefox-stub&os=win&lang=en-US",
+        "Pattern":""
+    },
+    {
+        "Name":"GeForce-Experience",
+        "Link":"https://www.geforce.com/geforce-experience/download",
+        "Pattern":"$link.links | ? href -match '.exe$' | select -First 1 -expand href"
+    },
+    {
+        "Name":"Git",
+        "Link":"https://git-scm.com/download/win",
+        "Pattern":"$link.links | ? href -match '.exe$' | select -First 1 -Skip 2 -expand href"
+    },
+    {
+        "Name":"IrfanView",
+        "Link":"https://www.irfanview.com/64bit.htm",
+        "Pattern":"$link.links | ? href -match '.exe$' | select -First 1 -expand href"
+    },
+    {
+        "Name":"IrfanView-Plugins",
+        "Link":"https://www.irfanview.com/64bit.htm",
+        "Pattern":"$link.links | ? href -match '.exe$' | select -First 1 -Skip 2 -expand href"
+    },
+    {
+        "Name":"KeePass",
+        "Link":"https://keepass.info/download.html",
+        "Pattern":"$link.links | ? href -match '.exe/download$' | select -First 1 -expand href"
+    },
+    {
+        "Name":"Python",
+        "Link":"https://www.python.org/downloads/",
+        "Pattern":"$link.links | ? href -match '.exe$' | select -First 1 -expand href"
+    },
+    {
+        "Name":"ShareX",
+        "Link":"https://github.com/ShareX/ShareX/releases/latest",
+        "Pattern":"'https://github.com' + ($link.links | ? href -match '.exe$' | select -First 1 -expand href)"
+    },
+    {
+        "Name":"Steam",
+        "Link":"https://steamcdn-a.akamaihd.net/client/installer/SteamSetup.exe",
+        "Pattern":""
+    },
+    {
+        "Name":"VSCode",
+        "Link":"https://update.code.visualstudio.com/latest/win32-x64-user/stable",
+        "Pattern":""
+    },
+    {
+        "Name":"VisualStudio",
+        "Link":"https://download.visualstudio.microsoft.com/download/pr/f4e14058-49e0-457c-b3cf-f14e6f2f073e/7ba06b42c1d24060787dc2e7171e08ad964e47eccb30dabbfd791d56d086fca2/vs_Community.exe",
+        "Pattern":""
+    },
+    {
+        "Name":"Wox",
+        "Link":"https://github.com/Wox-launcher/Wox/releases/latest",
+        "Pattern":"'https://github.com' + ($link.links | ? href -match '.exe$' | select -First 1 -expand href)"
+    },
+    {
+        "Name":"yEd",
+        "Link":"https://www.yworks.com/products/yed/download",
+        "Pattern":"($link.RawContent -match 'resources/yed/demo/yEd.{1,10}\\.zip') ; $link = 'https://www.yworks.com/' + $Matches[0]"
+    },
+    {
+        "Name":"CorsairLink",
+        "Link":"http://downloads.corsair.com/Files/Corsair-Link/Corsair-LINK-Installer-v4.9.7.35.zip",
+        "Pattern":""
+    },
+    {
+        "Name":"iCUE",
+        "Link":"http://downloads.corsair.com/Files/CUE/iCUESetup_3.21.88_release.msi",
+        "Pattern":""
+    },
+    {
+        "Name":"GHub",
+        "Link":"https://download01.logi.com/web/ftp/pub/techsupport/gaming/lghub_installer.exe",
+        "Pattern":""
+    },
+    {
+        "Name":"GHub",
+        "Link":"https://download01.logi.com/web/ftp/pub/techsupport/gaming/lghub_installer.exe",
+        "Pattern":""
+    }
+]
