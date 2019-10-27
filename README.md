@@ -68,6 +68,6 @@ And here is a more advanced one:
 
 As I said, you can use any PowerShell code inside the *Pattern* field, as long it returns a single string containing the actual download link for the program
 
-# Licence
+# License
 Keep in mind that I do not own any of the software downloaded using the scripts, and all of them are property of their actual creators downloaded only using official sources. If one of those programs are paid, you will need to buy it to use.
 I do not provide any support for those scripts in terms of damage, but feel free to ask any questions about the usage and improvement and I will gladly answer. Also feel free to make contributions to this repository, expanding the list of capable programs and improving the code.
