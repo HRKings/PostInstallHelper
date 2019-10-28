@@ -51,7 +51,10 @@ function DownloadProgram($jsonProgram){
         $Filename = $Filename.SubString($Filename.LastIndexOf('/') + 1)
     }
 
-    (New-Object System.Net.WebClient).DownloadFile($link, $path + "\Downloads\" + $Filename)
+    # Creates a WebClient object and adds an User-Agent, so some sites do not block requests
+    $webclient = New-Object System.Net.WebClient
+    $webclient.Headers.Add("User-Agent: Other")
+    $webclient.DownloadFile($link, $path + "\Downloads\" + $Filename)
     $Filename = ""
 
     Write-Host ""
